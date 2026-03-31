@@ -1,0 +1,27 @@
+  "name": "CoEditSession",
+  "type": "object",
+  "properties": {
+    "file_id": {
+      "type": "string",
+      "description": "Reference to DriveFile"
+    },
+    "content": {
+      "type": "string",
+      "description": "Current document content"
+    },
+    "active_users": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of currently active user emails"
+    },
+    "last_edited_by": {
+      "type": "string",
+      "description": "Email of last editor"
+    }
+  },
+  "required": [
+    "file_id"
+  ]
+}
